@@ -114,7 +114,7 @@ From popvsvac
 
 
 
---TEMP TABLE (Not working; Alex's github code also not working...)
+--TEMP TABLE (NW)
 
 DROP Table if exists #PercentPopulationVaccinated
 Create Table #PercentPopulationVaccinated
@@ -145,7 +145,7 @@ From #PercentPopulationVaccinated
 
 -- Make Multiple Views from data above
 
--- Creating View to store data for late rvisualizations (Not working; Alex's github code also not working...)
+-- Creating View to store data for late rvisualizations (NW)
 
 Create View PercentPopulationVaccinated as
 Select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations
